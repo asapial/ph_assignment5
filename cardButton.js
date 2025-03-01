@@ -47,6 +47,13 @@ for (const card of cards) {
             completeButton.classList.remove('bg-blue-600');
             completeButton.classList.add('bg-blue-400');
 
+            alert('Board update succesfully');
+
+            if(cntMinus.innerText==='0')
+            {
+                alert('Congratulations!! Your task is completed succesfully');
+            }
+
         }
     });
 };
