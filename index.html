@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" class="bg-slate-50">
+<html lang="en" data-theme="light" class="bg-slate-200">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,9 +25,9 @@
             </div>
 
             <div class="activityController flex gap-4">
-                <div class="pointsContainer p-2 flex gap-1 bg-slate-100 rounded-3xl justify-center items-center">
+                <div class="pointsContainer p-3 flex gap-4 bg-slate-100 rounded-3xl justify-center items-center">
                     <img src="assets/checkbox.png" alt="" srcset="">
-                    <h1 class="font-extrabold text-xl">23</h1>
+                    <h1 id="cntplus" class="font-extrabold text-xl">23</h1>
                 </div>
                 <div class="themeController p-2 bg-slate-100 flex justify-center items-center rounded-full">
                     <img src="assets/theme-btn.png" alt="" srcset="">
@@ -38,7 +38,7 @@
 
 
     <section class="mainContainer flex justify-center">
-        <div class="main w-4/5 border flex gap-5">
+        <div class="main w-4/5  flex gap-5">
             <div class="boardContainer w-3/4 bg-white rounded-3xl  ">
                 <div class="boardHeader  flex gap-4  m-5">
                     <div class="leftSection w-1/4 bg-slate-100 flex justify-center items-center rounded-2xl p-1 gap-2">
@@ -49,7 +49,7 @@
                             <h1 class="m-0">
                                 Task Assigned
                             </h1>
-                            <h1 class="text-3xl font-extrabold">05</h1>
+                            <h1 id="cntminus" class="text-3xl font-extrabold">05</h1>
                         </div>
                     </div>
                     <div class="middleSection w-1/2 rounded-2xl border bg-gradient-to-r from-blue-700 to-blue-200 p-1 flex justify-center items-center gap-3">
@@ -73,19 +73,151 @@
                             <h1 class="">
                                 Wed
                             </h1>
-                            <h1 class=" font-extrabold">01/03/2025</h1>
+                            <h1 id="datetime" class=" font-extrabold">01/03/2025</h1>
                         </div>
                     </div>
                 </div>
                 <div class="border border-dashed border-blue-50"></div>
-                <div class="carContainer">
-                    
+                <div class="cardContainer grid grid-cols-3 m-5 gap-3">
+                    <div class="card bg-slate-100 rounded-2xl p-5">
+                        <button class="p-2 bg-white rounded-lg w-1/3">ShopEase</button>
+
+                        <h1 class="cardHeader text-xl my-3 font-bold">Fix Mobile Button Issue</h1>
+
+                        <h2 class="bg-white py-4 px-3 rounded-lg text-slate-500">Debug using Chrome <br> DevTools, check for overlappi..</h2>
+
+                        <div class="border border-dashed border-blue-200 mt-3"></div>
+
+                        <div class="flex gap-2 my-2 buttonContainer">
+                            <div class="w-1/2">
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold">21 March 2025</h1>
+                            </div>
+
+                            <button  class="finishButton bg-blue-600 text-white font-bold p-2 rounded-lg w-1/2">Completed</button>
+                        </div>
+
+
+                    </div> 
+                    <div class="card bg-slate-100 rounded-2xl p-5">
+                        <button class="p-2 bg-white rounded-lg w-1/3">CloudSync</button>
+
+                        <h1 class="cardHeader text-xl my-3 font-bold">Add Dark Mode</h1>
+
+                        <h2 class="bg-white py-4 px-3 rounded-lg text-slate-500">Store the user's preference in<br>localStorage, update CSS varia..</h2>
+
+                        <div class="border border-dashed border-blue-200 mt-3"></div>
+
+                        <div class="flex gap-2 my-2 buttonContainer">
+                            <div class="w-1/2">
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold">21 March 2025</h1>
+                            </div>
+
+                            <button  class="finishButton bg-blue-600 text-white font-bold p-2 rounded-lg w-1/2">Completed</button>
+                        </div>
+
+
+                    </div>                     
+                    <div class="card bg-slate-100 rounded-2xl p-5">
+                        <button class="p-2 bg-white rounded-lg w-1/3">SwiftPay</button>
+
+                        <h1 class="cardHeader text-xl my-3 font-bold">Optimize  Home page </h1>
+
+                        <h2 class="bg-white py-4 px-3 rounded-lg text-slate-500">Debug using Chrome <br> DevTools, check for overlappi..</h2>
+
+                        <div class="border border-dashed border-blue-200 mt-3"></div>
+
+                        <div class="flex gap-2 my-2 buttonContainer">
+                            <div class="w-1/2">
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold">21 March 2025</h1>
+                            </div>
+
+                            <button  class="finishButton bg-blue-600 text-white font-bold p-2 rounded-lg w-1/2">Completed</button>
+                        </div>
+
+
+                    </div>                    
+                    <div class="card bg-slate-100 rounded-2xl p-5">
+                        <button class="p-2 bg-white rounded-lg w-1/3">Meta</button>
+
+                        <h1 class="cardHeader text-xl my-3 font-bold">Add new emoji 🤲</h1>
+
+                        <h2 class="bg-white py-4 px-3 rounded-lg text-slate-500">Debug using Chrome <br> DevTools, check for overlappi..</h2>
+
+                        <div class="border border-dashed border-blue-200 mt-3"></div>
+
+                        <div class="flex gap-2 my-2 buttonContainer">
+                            <div class="w-1/2">
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold">21 March 2025</h1>
+                            </div>
+
+                            <button  class="finishButton bg-blue-600 text-white font-bold p-2 rounded-lg w-1/2">Completed</button>
+                        </div>
+
+
+                    </div>                     
+                    <div class="card bg-slate-100 rounded-2xl p-5">
+                        <button class="p-2 bg-white rounded-lg w-1/3">Google LLC</button>
+
+                        <h1 class="cardHeader text-xl my-3 font-bold">Integrate OpenAI API </h1>
+
+                        <h2 class="bg-white py-4 px-3 rounded-lg text-slate-500">Debug using Chrome <br> DevTools, check for overlappi..</h2>
+
+                        <div class="border border-dashed border-blue-200 mt-3"></div>
+
+                        <div class="flex gap-2 my-2 buttonContainer">
+                            <div class="w-1/2">
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold">21 March 2025</h1>
+                            </div>
+
+                            <button  class="finishButton bg-blue-600 text-white font-bold p-2 rounded-lg w-1/2">Completed</button>
+                        </div>
+
+
+                    </div>                     
+                    <div class="card bg-slate-100 rounded-2xl p-5">
+                        <button class="p-2 bg-white rounded-lg w-1/3">Glassdoar</button>
+
+                        <h1 class="cardHeader text-xl my-3 font-bold">Improve Job searching </h1>
+
+                        <h2 class="bg-white py-4 px-3 rounded-lg text-slate-500">Debug using Chrome <br> DevTools, check for overlappi..</h2>
+
+                        <div class="border border-dashed border-blue-200 mt-3"></div>
+
+                        <div class="flex gap-2 my-2 buttonContainer">
+                            <div class="w-1/2">
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold">21 March 2025</h1>
+                            </div>
+
+                            <button class="finishButton bg-blue-600 text-white font-bold p-2 rounded-lg w-1/2">Completed</button>
+                        </div>
+
+
+                    </div> 
                 </div>
             </div>
-            <div class="activityContainer w-1/4 bg-white rounded-3xl p-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut animi porro eveniet impedit neque rem reprehenderit at doloremque suscipit nostrum unde minima repudiandae libero consequuntur dolore enim doloribus, numquam placeat assumenda harum quo atque officiis facere? Omnis mollitia ipsa labore accusamus itaque aperiam maxime quae odio laudantium earum ullam, necessitatibus officia accusantium? Asperiores perspiciatis fuga saepe eveniet ipsum illo, dolore labore voluptatem quo assumenda iure eligendi nobis. Rerum incidunt obcaecati illo libero molestias quis at necessitatibus cumque. Fuga aliquam rem ab corporis, odio amet tempora mollitia dolorum iure dolores fugit quis modi? Ducimus consequatur consectetur animi corrupti quis quia!</p>
+            <div class="activityContainer w-1/4 bg-white rounded-3xl ">
+                <div class="activityHeader m-5 flex flex-col items-center justify-center gap-3">
+                    <div class="flex gap-2 items-center justify-center">
+                        <div>
+                            <img src="assets/activity.png" alt="" srcset="">
+                        </div>
+                        <h1 class="font-bold text-xl">Activity Log</h1>
+                    </div>
+                    <button  class="bg-blue-600 text-white p-2 rounded-lg w-1/2">Clear History</button>
+                </div>
+                <div class="border border-dashed border-blue-50"></div>
+                <div id="activityContainer" class="m-5">
+
+                </div>
             </div>
         </div>
     </section>
+<script src="cardButton.js"></script>
 </body>
 </html>
